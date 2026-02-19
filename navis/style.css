@@ -196,7 +196,7 @@ main {
   /* border: 1px solid saddlebrown; */
   padding-bottom: 10px;
 }
-.expertise-button button {
+.services,.expertise-button button {
   padding: 15px 30px;
   /* border: red; */
   border-radius: 35px;
@@ -208,20 +208,20 @@ main {
   border: 2px solid red;
   color: red;
 }
-.expertise {
+.expertise,.service-offer {
   width: 100%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.expertise p {
+.expertise p,.service-offer p {
   font-size: 20px;
   font-family: Inter;
   font-weight: 400;
   color: #534f4f;
 }
 .exp{
-    font-size: 43px;
+    font-size: 40px;
     font-family: Inter ;
     font-weight: 500;
 }
@@ -256,4 +256,73 @@ main {
   background-color: rgb(1, 96, 255);
   color: #fff;
   border: rgb(1, 96, 255);
+}
+.main-4{
+   padding: 80px 7vw;
+}
+.service-button{
+    padding: 62px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: royalblue; */
+    width: 100%;
+}
+.button-service{
+    display: grid;
+    grid-template-columns: 2fr 4fr 0.5fr;
+    background-color: rgb(247,247,248);
+    padding: 22px 13px;
+    border-radius: 25px;
+}
+.button-service:hover{
+    background-color: rgb(1, 96, 255);
+    color: #fff
+}
+.go{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    background-color: rgb(1, 96, 255);
+    border:none;
+    color: #fff;
+}
+.go button:hover{
+    color: rgb(1, 96, 255);
+    background-color: white;
+}
+.s{
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 500;
+}
+.s1{
+    font-size: 20px;
+    font-family: Inter;
+    color: #534f4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    cursor: pointer;
 }
