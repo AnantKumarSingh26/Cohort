@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.caveat-text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+span{
+    font-family: Caveat;
+    font-size: 32px;
+    font-weight: 900;
+}
+body{
+
+}
+.folder-item{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- 1. Import Fonts & Icons --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Material+Icons');
+
+/* --- 2. Header Container --- */
+.main-header {
+    width: 100%;
+    padding: 16px 20px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 25px 25px ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom:30px ;
+}
+
+/* --- 3. Content Wrapper --- */
+.header-content {
+    max-width: 800px;
+}
+
+/* --- 4. Logo Area (Folder + Title) --- */
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.folder-icon {
+    font-size: 48px;
+    color: #ffca28; /* Folder Yellow */
+    filter: drop-shadow(0 0 10px rgba(255, 202, 40, 0.3));
+}
+
+.logo-area h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    width: fit-content; /* Border only wraps the text */
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease, transform 0.3s ease;
+}
+
+/* Accent color for "Projects" word */
+.logo-area h1 span {
+    color: #ff7e5f; /* Salmon Accent */
+    font-weight: 300;
+}
+
+/* Hover Effect: Border appears around text */
+.logo-area h1:hover {
+    border-color: #ff7e5f;
+    transform: translateY(-2px);
+    cursor: default;
+}
+
+/* --- 5. Subtitle Text --- */
+.header-content p {
+    color: #888;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* --- 6. Animated Bottom Line --- */
+.header-line {
+    height: 2px;
+    width: 0; /* Starts at 0 for animation */
+    background: linear-gradient(90deg, transparent, #ff7e5f, transparent);
+    margin: 25px auto 0;
+    animation: growLine 1.5s ease-out forwards;
+}
+
+/* --- 7. Animation Keyframes --- */
+@keyframes growLine {
+    from { width: 0; }
+    to { width: 60%; }
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 2px  solid saddlebrown; */
+}
+
+a{
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+a:hover{
+    background-color: #ffdfcc;
+    border-radius: 50px;
+}
