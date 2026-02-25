@@ -586,6 +586,28 @@ main {
       }}
     }
 
+    section.view8{
+      .footer{
+        padding: 1rem 4rem;
+        display: grid;
+        grid-template-areas:"alvy links"
+                            "alvy author";
+        .social{
+          grid-area: alvy;
+          display: flex;
+          justify-content: space-between;
+        }
+        .links{
+          grid-area: links;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .author{
+          grid-area: author;
+        }
+      }
+    }
+    
    
   }
 }

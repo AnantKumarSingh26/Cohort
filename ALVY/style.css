@@ -625,6 +625,24 @@ main section.view8 .footer .author .top > a {
     height: -moz-fit-content;
     height: fit-content;
   }
+  main section.view8 .footer {
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-areas: "alvy links" "alvy author";
+  }
+  main section.view8 .footer .social {
+    grid-area: alvy;
+    display: flex;
+    justify-content: space-between;
+  }
+  main section.view8 .footer .links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main section.view8 .footer .author {
+    grid-area: author;
+  }
 }
 @media (min-width: 600px) and (max-width: 999px) {
   section.view5 .bottom {
